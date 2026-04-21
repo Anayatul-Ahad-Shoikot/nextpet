@@ -9,7 +9,7 @@ const BestProduct = () => {
       <div className='container'>
         <div className="text-center flex items-center justify-center">
           <div>
-            <h3 className=' font-bold text-5xl uppercase text-[#FE8935]'>Best Product</h3>
+            <h3 className=' font-bold text-2xl uppercase text-[#FE8935]'>Best Product</h3>
             <h1 className='font-bold text-5xl mt-8'>Deal Of The Week</h1>
           </div>
         </div>
@@ -49,7 +49,7 @@ const BestProduct = () => {
               </div>
             </div>
 
-            <button  className='flex text-[22px] items-center gap-4 bg-[#FE8935] py-4.5 px-18 rounded-full mt-[63px] text-center'>Shop Now <Image src={icon}/> </button>
+            <button  className='flex text-[22px] items-center gap-4 bg-gradient-to-r from-orange-300 to-[#f87b22] py-4.5 px-18 rounded-full mt-[63px] text-center'>Shop Now <Image src={icon} alt='image'/> </button>
           </div>
 
         </div>
