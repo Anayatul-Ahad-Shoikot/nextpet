@@ -1,24 +1,37 @@
-import React from "react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP, FaYoutube } from "react-icons/fa";
+import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
+import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#e8d9b5] text-gray-700 pt-12 pb-6 px-6">
-      
-      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+    <footer className="bg-[#e8d9b5] pt-16 pb-6 px-6">
 
-        {/* Logo + Info */}
+      <div className="container mx-auto grid md:grid-cols-5 gap-8">
+
+        {/* 🔹 Logo + Contact */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">🐾 Pets</h2>
-          <p className="text-sm">1831 Turkey Pen Lane</p>
-          <p className="text-sm">Hotville, AL 36067</p>
-          <p className="text-sm mt-2">📞 334-569-8499</p>
-          <p className="text-sm">✉️ email@example.com</p>
+          <h2 className="text-2xl font-bold mb-4">Poets</h2>
+
+          <div className="space-y-3 text-gray-700 text-sm">
+            <p className="flex items-start gap-2">
+              <HiOutlineLocationMarker className="text-xl mt-1" />
+              1831 Turkey Pen Lane <br /> Holtville, AL 36067
+            </p>
+
+            <p className="flex items-center gap-2">
+              <FiPhone /> 334-569-8499
+            </p>
+
+            <p className="flex items-center gap-2">
+              <HiOutlineMail /> email@example.com
+            </p>
+          </div>
         </div>
 
-        {/* Menu */}
+        {/* 🔹 Menu */}
         <div>
-          <h3 className="font-semibold mb-3">Quick Menu</h3>
-          <ul className="space-y-1 text-sm">
+          <h3 className="font-semibold mb-3 border-b pb-1">QUICK MENU</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
             <li>Home</li>
             <li>Shop</li>
             <li>Product</li>
@@ -26,10 +39,21 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Services */}
+        {/* 🔹 Account */}
         <div>
-          <h3 className="font-semibold mb-3">Our Services</h3>
-          <ul className="space-y-1 text-sm">
+          <h3 className="font-semibold mb-3 border-b pb-1">QUICK MENU</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li>My Account</li>
+            <li>Wishlist</li>
+            <li>Checkout</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        {/* 🔹 Services */}
+        <div>
+          <h3 className="font-semibold mb-3 border-b pb-1">OUR SERVICES</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
             <li>14 Days Returns</li>
             <li>Gift Card</li>
             <li>Free Delivery</li>
@@ -37,31 +61,46 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Newsletter */}
+        {/* 🔹 Newsletter */}
         <div>
-          <h3 className="font-semibold mb-3">Newsletter</h3>
-          <p className="text-sm mb-3">
-            Subscribe for updates and offers.
+          <h3 className="font-semibold mb-3 border-b pb-1">NEWSLETTER</h3>
+          <p className="text-sm text-gray-700 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
 
-          <div className="flex border rounded-full overflow-hidden">
+          <div className="flex items-center border rounded-full px-4 py-2">
             <input
               type="email"
               placeholder="email@example.com"
-              className="px-4 py-2 w-full outline-none bg-transparent"
+              className="bg-transparent outline-none flex-1 text-sm"
             />
-            <button className="px-4 bg-gray-200 hover:bg-gray-300">
-              →
-            </button>
+            <span className="text-xl">→</span>
           </div>
         </div>
 
       </div>
 
-      {/* Bottom */}
-      <div className="text-center text-sm mt-10 border-t pt-4">
-        © 2026 Pets Food. All rights reserved.
+      {/* 🔻 Bottom */}
+      <div className=" container border-t mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <p className="text-sm text-gray-700">
+          Copyright © 2022 Poets Food And Accessories.
+        </p>
+
+        {/* Social Icons */}
+        <div className="  flex gap-3 ">
+          {[FaFacebookF, FaTwitter, FaInstagram, FaPinterestP, FaYoutube].map((Icon, i) => (
+            <div
+              key={i}
+              className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-black hover:text-white transition"
+            >
+              <Icon />
+            </div>
+          ))}
+        </div>
+
       </div>
+
     </footer>
   );
 };
