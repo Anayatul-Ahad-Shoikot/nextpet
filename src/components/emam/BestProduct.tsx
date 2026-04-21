@@ -49,7 +49,7 @@ const BestProduct = () => {
               </div>
             </div>
 
-            <button  className='flex text-[22px] items-center gap-4 bg-gradient-to-r from-orange-300 to-[#f87b22] py-4.5 px-18 rounded-full mt-[63px] text-center'>Shop Now <Image src={icon} alt='image'/> </button>
+            <button  className='flex text-[22px] items-center gap-4 bg-linear-to-r from-orange-300 to-[#f87b22] py-4.5 px-18 rounded-full mt-[63px] text-center'>Shop Now <Image src={icon} alt='image'/> </button>
           </div>
 
         </div>
