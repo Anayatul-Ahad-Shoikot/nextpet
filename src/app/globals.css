@@ -1,9 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+    /* colors */
+    --color-text-black: #000000;
+    --color-text-gray: #707070;
+    --color-primary-yellow: #fec435;
+    --color-primary-orange: #fe8935;
+    --color-secondary-peach: #fff9eb;
+    --color-secondary-gray: #d9d9d9;
+}
+
 @utility container {
+<<<<<<< HEAD
   @apply max-w-[1440px] mx-auto px-[10px];
+=======
+    @apply max-w-[1440px] mx-auto h-full;
+>>>>>>> 73c544c8cd9f49a18a9794d018ecf3e12a7bf4da
 }
 
 body {
-  font-family: var(--font-nunitoSans);
+    font-family: var(--font-nunitoSans);
 }
