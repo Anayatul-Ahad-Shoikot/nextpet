@@ -1,3 +1,5 @@
+import Image from "next/image";
+import BestProduct from "../components/emam/BestProduct";
 
 export default function Home() {
     return (
