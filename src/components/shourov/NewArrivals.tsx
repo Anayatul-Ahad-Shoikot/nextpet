@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
-import cate_food_1 from "../../assets/images/cat_food_1.png";
 import { StaticImageData } from "next/image";
+import cate_food_1 from "@/src/assets/images/cat_food_1.png";
 import cat_food_2 from "@/src/assets/images/cat_food_2.png";
 import cat_food_3 from "@/src/assets/images/cat_food_3.png";
 import cat_food_4 from "@/src/assets/images/cat_food_4.png";
