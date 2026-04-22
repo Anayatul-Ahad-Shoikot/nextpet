@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <div className="absolute size-[270px] top-[-44px] left-[-40px] bg-primary-orange opacity-80 blur-[225px] -z-1"></div>
                 <div className="container">
                     <div className="max-w-[540px] w-full h-full flex flex-col gap-5 items-start justify-center">
-                        <h1 className="text-text-black text-[48px] font-[800]">
+                        <h1 className="text-text-black text-[48px] font-[800] leading-none">
                             Get Food & Accessories for your pets
                         </h1>
                         <p className="text-[20px] text-text-gray">

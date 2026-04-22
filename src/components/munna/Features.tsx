@@ -1,27 +1,31 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import giftcard from "@/src/assets/icons/giftcard.png";
+import delivery from "@/src/assets/icons/delivery.png";
+import returns from "@/src/assets/icons/returns.png";
+import dog from "@/src/assets/images/dog.png";
+import cat from "@/src/assets/images/cat.png";
 
 type Feature = {
     title: string;
     desc: string;
-    image: string;
+    image: StaticImageData;
 };
 
 const features: Feature[] = [
     {
         title: "Gift Card",
         desc: "Don’t know their size or favorite color? No need to worry give them a Gift card and let them decide.",
-        image: "/icon/giftcard.png",
+        image: giftcard,
     },
     {
         title: "14 Days Returns",
         desc: "You have 14 days to change your mind and return the item. No questions asked!",
-        image: "/icon/delivery.png",
+        image: returns,
     },
     {
         title: "Free Delivery",
         desc: "If you purchase over 100 dollars, you will get free delivery on your order.",
-
-        image: "/icon/delivery.png",
+        image: delivery,
     },
 ];
 const Features = () => {
@@ -62,7 +66,7 @@ const Features = () => {
 
                 <div className="overflow-hidden rounded-lg">
                     <Image
-                        src="/icon/dog.png"
+                        src={dog}
                         alt="dog"
                         width={450}
                         height={300}
@@ -72,7 +76,7 @@ const Features = () => {
 
                 <div className="relative overflow-hidden rounded-lg">
                     <Image
-                        src="/icon/dog.png"
+                        src={dog}
                         alt="food"
                         width={400}
                         height={300}
@@ -87,7 +91,7 @@ const Features = () => {
 
                 <div className="overflow-hidden rounded-lg">
                     <Image
-                        src="/icon/cat.png"
+                        src={cat}
                         alt="cat"
                         width={400}
                         height={300}
