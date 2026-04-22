@@ -1,9 +1,10 @@
 import Image from 'next/image'
-import React from 'react'
 import kutta from '@/src/assets/kutta.svg'
 import icon from '@/src/assets/icon/Vector.png'
 
 const BestProduct = () => {
+
+
   return (
     <section className='py-37.5'>
       <div className='container'>
