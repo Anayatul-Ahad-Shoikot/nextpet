@@ -1,11 +1,30 @@
-# Feedbacks.tsx Fix Progress
+# Fix Feedbacks.tsx TypeScript Error - Progress Tracker
 
-## Steps:
+## Steps from Approved Plan:
 
-- [x] Step 1: Edit Feedbacks.tsx - Fix props, map references (card → item), remove stray ``, dynamic rating.
-- [x] Step 2: Update cards data image paths.
-- [x] Step 3: Improve layout (grid for 3 cards).
-- [x] Step 4: Test with `npm run dev`.
-- [x] Step 5: Complete & verify no errors.
+### 1. Create TODO.md (current)
 
-**All steps complete. Feedbacks.tsx fixed: syntax errors gone, correct item usage, dynamic stars, grid layout, TS types updated (minor StaticImport warning ignorable). Ready to use in app! Run `npm run dev` to preview.**
+- [x] Done.
+
+### 2. Update Feedbacks.tsx
+
+- [ ] Add necessary imports (Image, star).
+- [ ] Fix cards data image paths to public/.
+- [ ] Update map to pass dynamic props from item to CardFeed.
+- [ ] Change layout to responsive grid.
+
+### 3. Update CardFeed.tsx
+
+- [ ] Adjust Props type: image as string, add optional rating.
+- [ ] Implement dynamic star rendering based on rating.
+
+### 4. Handle assets
+
+- [ ] Ensure images accessible (use existing or placeholders).
+
+### 5. Test and verify
+
+- [ ] Refresh dev server, check no TS errors.
+- [ ] Update TODO.md on completion.
+
+**Next: Edit Feedbacks.tsx**
