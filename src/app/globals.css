@@ -12,7 +12,6 @@
 
 @utility container {
 	@apply max-w-[1440px] mx-auto px-[10px];
-	@apply max-w-[1440px] mx-auto h-full;
 }
 
 body {
