@@ -77,6 +77,7 @@ const TrendingProducts = () => {
                 price={item.price}
                 title={item.title}
                 key={item.id}
+                sale={false}
               />
             ))}
           </div>
