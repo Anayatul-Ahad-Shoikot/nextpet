@@ -11,11 +11,11 @@ export default function Home() {
         <>
             <HeroSection />
             <StatisticsSection />
+            <TrendingProducts />
+            <NewArrivals />
             <BestProduct />
             <Feedbacks />
             <Features />
-            <TrendingProducts />
-            <NewArrivals />
         </>
     );
 }
