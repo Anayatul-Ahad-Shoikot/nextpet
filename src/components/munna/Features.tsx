@@ -29,7 +29,7 @@ const Features = () => {
         <section className="bg-gray-100 py-16 px-6">
 
             {/* 🔶 Top Feature Cards */}
-            <div className="container mx-auto grid md:grid-cols-3 gap-6">
+            <div className="container mx-auto grid md:grid-cols-3 gap-9">
                 {features.map((item, i) => (
                     <div
                         key={i}
@@ -42,14 +42,14 @@ const Features = () => {
                             alt=""
                             width={72}
                             height={72}
-                            
+                            className="pt-10 pl-7"
                         />
 
                         <div>
-                            <h3 className="font-semibold text-lg mb-2">
+                            <h3 className="font-semibold text-lg pt-10 pl-7 mb-2">
                                 {item.title}
                             </h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">
+                            <p className="text-sm text-gray-600 pl-6 pt-3 pb-10  leading-relaxed">
                                 {item.desc}
                             </p>
                         </div>
@@ -58,13 +58,13 @@ const Features = () => {
             </div>
 
             {/* 🟢 Image Grid */}
-            <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mt-12">
+            <div className="container mx-auto grid md:grid-cols-3 gap-6 mt-30">
 
                 <div className="overflow-hidden rounded-lg">
                     <Image
-                        src="/dog.jpg"
+                        src="/icon/dog.png"
                         alt="dog"
-                        width={400}
+                        width={450}
                         height={300}
                         className="w-full h-[260px] object-cover hover:scale-105 transition duration-300"
                     />
@@ -72,7 +72,7 @@ const Features = () => {
 
                 <div className="relative overflow-hidden rounded-lg">
                     <Image
-                        src="/food.jpg"
+                        src="/icon/dog.png"
                         alt="food"
                         width={400}
                         height={300}
@@ -87,7 +87,7 @@ const Features = () => {
 
                 <div className="overflow-hidden rounded-lg">
                     <Image
-                        src="/public/icon/cat.png"
+                        src="/icon/cat.png"
                         alt="cat"
                         width={400}
                         height={300}

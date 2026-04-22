@@ -4,9 +4,9 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#e8d9b5] pt-16 pb-6 px-6">
+    <footer className="bg-[#FEC435] pt-30 pb-6 px-6">
 
-      <div className="container mx-auto grid md:grid-cols-5 gap-8">
+      <div className="container pb-20 mx-auto grid md:grid-cols-5 gap-8">
 
         {/* 🔹 Logo + Contact */}
         <div>
