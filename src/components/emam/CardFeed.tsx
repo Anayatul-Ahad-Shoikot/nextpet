@@ -1,4 +1,4 @@
-import star from '@/src/assets/icon/Star.png'
+import star from '@/src/assets/icons/Star.png'
 import { StaticImageData } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 

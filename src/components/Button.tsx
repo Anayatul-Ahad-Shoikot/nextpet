@@ -10,6 +10,7 @@ type ButtonProps = {
     variant?: "primary" | "outline";
     className?: string;
     disabled?: boolean;
+    padding?: string;
 };
 
 export function Button({
@@ -20,9 +21,9 @@ export function Button({
     variant = "primary",
     className = "",
     disabled = false,
+    padding = "px-[72px] py-[18px]",
 }: ButtonProps) {
-    const baseStyles =
-        "inline-flex items-center gap-2 px-[72px] py-[18px] rounded-full font-[600] text-[24px] text-text-black bg-[linear-gradient(90deg,var(--color-primary-yellow)_2.47%,var(--color-primary-orange)_100%)] cursor-pointer";
+    const baseStyles = `inline-flex items-center gap-2 ${padding} rounded-full font-[600] text-[24px] text-text-black bg-[linear-gradient(90deg,var(--color-primary-yellow)_2.47%,var(--color-primary-orange)_100%)] cursor-pointer`;
     const variants = {
         primary: "",
         outline:

@@ -11,9 +11,13 @@
 }
 
 @utility container {
-    @apply max-w-360 mx-auto h-full;
+    @apply max-w-[1440px] mx-auto px-[10px];
 }
 
 body {
     font-family: var(--font-nunitoSans);
+}
+
+* {
+    box-sizing: border-box;
 }

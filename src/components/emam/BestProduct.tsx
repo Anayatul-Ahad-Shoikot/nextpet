@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import kutta from '@/src/assets/kutta.svg'
-import icon from '@/src/assets/icon/Vector.png'
+import kutta from '@/src/assets/images/kutta.svg'
+import icon from '@/src/assets/icons/Vector.png'
 
 const BestProduct = () => {
 
@@ -26,37 +26,44 @@ const BestProduct = () => {
           <div>
             <h2 className='font-bold text-4xl'>Beneful Dog Food Pet food Nestlé Purina</h2>
             <p className='text-[#FE8935] text-2xl mt-[15px]'>$56.20</p>
-            <p className='font-normal text-[20px] w-[720px] mt-[25px] text-[#707070] text-justify'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution. </p>
+            <p className='font-normal text-[20px] w-[720px] mt-[25px] items-center text-[#707070] text-justify'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution. </p>
 
-            <div className="flex mt-11.25  gap-6 text-center">
-              <div>
-                <h1 className="text-3xl font-bold">24</h1>
-                <p className="text-gray-500 mt-1">Days</p>
-              </div>
-              <span className="text-orange-500 text-5xl font-bold">:</span>
-              <div>
-                <h1 className="text-3xl font-bold">21</h1>
-                <p className="text-gray-500 mt-1">Hours</p>
-              </div>
-              <span className="text-orange-500 text-5xl font-bold">:</span>
-              <div>
-                <h1 className="text-3xl font-bold">39</h1>
-                <p className="text-gray-500 mt-1">Mins</p>
-              </div>
-              <span className="text-orange-500 text-5xl font-bold">:</span>
-              <div>
-                <h1 className="text-3xl font-bold">48</h1>
-                <p className="text-gray-500 mt-1">Secs</p>
-              </div>
+                        <div className="flex mt-11.25  gap-6 text-center">
+                            <div>
+                                <h1 className="text-3xl font-bold">24</h1>
+                                <p className="text-gray-500 mt-1">Days</p>
+                            </div>
+                            <span className="text-orange-500 text-5xl font-bold">
+                                :
+                            </span>
+                            <div>
+                                <h1 className="text-3xl font-bold">21</h1>
+                                <p className="text-gray-500 mt-1">Hours</p>
+                            </div>
+                            <span className="text-orange-500 text-5xl font-bold">
+                                :
+                            </span>
+                            <div>
+                                <h1 className="text-3xl font-bold">39</h1>
+                                <p className="text-gray-500 mt-1">Mins</p>
+                            </div>
+                            <span className="text-orange-500 text-5xl font-bold">
+                                :
+                            </span>
+                            <div>
+                                <h1 className="text-3xl font-bold">48</h1>
+                                <p className="text-gray-500 mt-1">Secs</p>
+                            </div>
+                        </div>
+
+                        <button className="flex text-[22px] items-center gap-4 bg-linear-to-r from-orange-300 to-[#f87b22] py-4.5 px-18 rounded-full mt-[63px] text-center">
+                            Shop Now <Image src={icon} alt="image" />{" "}
+                        </button>
+                    </div>
+                </div>
             </div>
+        </section>
+    );
+};
 
-            <button  className='flex text-[22px] items-center gap-4 bg-linear-to-r from-orange-300 to-[#f87b22] py-4.5 px-18 rounded-full mt-[63px] text-center'>Shop Now <Image src={icon} alt='image'/> </button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  )
-}
-
-export default BestProduct
+export default BestProduct;
