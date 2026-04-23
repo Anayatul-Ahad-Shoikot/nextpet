@@ -3,6 +3,8 @@ import w1 from '@/src/assets/images/w1.png'
 import w2 from '@/src/assets/images/w2.png'
 import w3 from '@/src/assets/images/w3.png'
 import star from '@/src/assets/icons/Star.png'
+import CardFeed from "./CardFeed"
+
 
 const Feedbacks = () => {
 
@@ -16,64 +18,28 @@ const Feedbacks = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mt-[112px] ">
-            <div className="bg-[#D9D9D9] hover:bg-[#fbc089d9] hover:rounded-tl-[50px] hover:rounded-br-[50px] flex items-center justify-center text-center rounded-tr-[50px] rounded-bl-[50px] rounded-bl-[50px] linear ease-in-out duration-200  cursor-pointer">
-                <div className="py-[60px] px-4.5">
-                    <div>
-                        <Image src={w1} alt="image" className="mx-auto"/>
-                        <h3 className="font-semibold text-[20px] mt-2.5">Emma Charlotte</h3>
-                        <p>Singer</p>
-                    </div>
-                    <div className="flex items-center justify-center  mt-11">
-                        <div className="flex gap-2.5">
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                        </div>
-                    </div>
-                        <p className="w-[382px] text-[#707070] mt-2.5 font-normal text-[20px]">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</p>
-                </div>
-            </div>
-            <div className="bg-[#D9D9D9] hover:bg-[#fbc089d9] hover:rounded-tl-[50px] rounded-tl-[50px] hover:rounded-br-[50px] flex items-center justify-center text-center rounded-tr-[50px] rounded-bl-[50px] rounded-bl-[50px] linear ease-in-out duration-200 cursor-pointer">
-                <div className="py-[60px] px-4.5">
-                    <div>
-                        <Image src={w2} alt="image" className="mx-auto"/>
-                        <h3 className="font-semibold text-[20px] mt-2.5">Isabella pery</h3>
-                        <p>Singer</p>
-                    </div>
-                    <div className="flex items-center justify-center  mt-11">
-                        <div className="flex gap-2.5">
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                        </div>
-                    </div>
-                        <p className="w-[382px] text-[#707070] mt-2.5 font-normal text-[20px]">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</p>
-                </div>
-            </div>
-            <div className="bg-[#D9D9D9] hover:bg-[#fbc089d9] hover:rounded-tr-[50px] hover:rounded-br-[50px] flex items-center justify-center text-center rounded-tl-[50px] rounded-bl-[50px] rounded-bl-[50px] linear ease-in-out duration-200 cursor-pointer">
-                <div className="py-[60px] px-4.5">
-                    <div>
-                        <Image src={w3} alt="image" className="mx-auto"/>
-                        <h3 className="font-semibold text-[20px] mt-2.5">elia Sophia</h3>
-                        <p>Singer</p>
-                    </div>
-                    <div className="flex items-center justify-center  mt-11">
-                        <div className="flex gap-2.5">
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                            <Image src={star} alt="image"/>
-                        </div>
-                    </div>
-                        <p className="w-[382px] text-[#707070] mt-2.5 font-normal text-[20px]">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</p>
-                </div>
-            </div>
+        <div className="flex justify-between flex-wrap gap-5 mt-[112px] ">
+            <CardFeed
+              className="rounded-tr-[50px] rounded-bl-[50px] rounded-bl-[50px]"
+              name="Emma Charlotte"
+              head="Singer"
+              paragraph="There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain"
+              img={w1}
+            />
+            <CardFeed
+              className="text-center rounded-tr-[50px] rounded-bl-[50px] rounded-bl-[50px]  rounded-tl-[50px]  "
+              name="Isabella pery"
+              head="Singer"
+              paragraph="There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain"
+              img={w2}
+            />
+            <CardFeed
+              className="rounded-tl-[50px] rounded-tr-[0px]!  hover:rounded-tr-[50px]! rounded-bl-[50px] rounded-bl-[50px] "
+              name="Emma Charlotte"
+              head="Singer"
+              paragraph="There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain"
+              img={w3}
+            />
         </div>
     </div>
    </section>

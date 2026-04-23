@@ -2,6 +2,11 @@ import Image from 'next/image'
 import kutta from '@/src/assets/images/kutta.svg'
 import icon from '@/src/assets/icons/Vector.png'
 
+ export interface details {
+    title: string ,
+    
+ } 
+
 const BestProduct = () => {
 
 
