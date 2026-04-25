@@ -54,7 +54,7 @@ const NewArrivals = () => {
                 img={cate_food_1}
                 price="$10.99"
                 sale={true}
-                title="Cat  Food Royal "
+                title="Cat  Food Royal"
               />
               <div className="pt-[30px] md:pt-[50px] flex items-center gap-[10px] sm:gap-[19px] flex-wrap">
                 <CommonDesign count={24} text="Days" />
