@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "nextpets",
   "version": "0.1.0",
   "private": true,
@@ -25,4 +26,36 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+=======
+	"name": "nextpets",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "next dev",
+		"server": "json-server --watch db.json --port 5000",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint"
+	},
+	"dependencies": {
+		"@types/json-server": "^0.14.8",
+		"axios": "^1.15.2",
+		"json-server": "^1.0.0-beta.15",
+		"next": "^16.2.4",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"react-icons": "^5.6.0"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "^4",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "16.2.4",
+		"tailwindcss": "^4",
+		"typescript": "^5"
+	}
+>>>>>>> 5fc7f301c3c3be366750eae4d339609c7826a648
 }
